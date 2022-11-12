@@ -7,10 +7,11 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+
 public class BooleanSearchEngine implements SearchEngine {
     Map<String, List<PageEntry>> wordsMap;
 
-    public BooleanSearchEngine(File pdfsDir) throws IOException {
+    public BooleanSearchEngine( File pdfsDir) throws IOException {
         wordsMap = new HashMap<>();
         List<PageEntry> pList;
         for (File file : pdfsDir.listFiles()) {
